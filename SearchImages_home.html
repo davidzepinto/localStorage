@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/my_style.css">
+        <meta charset="UTF-8">
+        <title>Search Images</title>
+    </head>
+    <body>
+        <script src="js/Pag_Init.js"></script>
+        <script src="js/histograma_manager.js"></script>
+        <script src="js/XML_LStorage.js"></script>
+        <div id="Logo">
+            <figure>
+                <img src="logo.png" width="303" height="165">
+            </figure>
+
+            <form id="inputs">
+                <input id="search" type="search" autocomplete="on" value="" style="width: 300px;" required>
+                <input type="button" value="Search" onclick="Search_no_Color()">
+
+                <div>
+                    <input type="button" onclick="click_color('Vermelho')" style="background: #CC0000;">
+                    <input type="button" onclick="click_color('Laranja')" style="background: #FB940B;">
+                    <input type="button" onclick="click_color('Amarelo')" style="background: #FFFF00;">
+                    <input type="button" onclick="click_color('Verde')" style="background: #00CC00;" >
+                    <input type="button" onclick="click_color('Verde Azulado')" style="background: #03C0C6;">
+                    <input type="button" onclick="click_color('Azul')" style="background: #0000FF;">
+                </div>
+                <div id="baixo">
+                    <input type="button" onclick="click_color('Roxo')" style="background: #762CA7;">
+                    <input type="button" onclick="click_color('Rosa')" style="background: #FF98BF;">
+                    <input type="button" onclick="click_color('Branco')" style="background: #FFFFFF;">
+                    <input type="button" onclick="click_color('Cinzento')" style="background: #999999;">
+                    <input type="button" onclick="click_color('Preto')" style="background: #000000;">
+                    <input type="button" onclick="click_color('Castanho')" style="background: #885418;">
+                </div>
+                <div id="radio_grid">
+                    <input type="radio" id="grid" name="results_type" value="1">
+                    <input type="radio" id="circular" name="results_type" value="2">
+                    <img id="grid_img" src="grid.png" width="75" height="50">
+                    <img id="circular_img" src="circle.png" width="50" height="50">
+                </div>
+
+            </form>
+        </div>
+        <div>
+            <canvas id="canvas" width="800" height="800">
+                Your browser doesn't recognize the canvas element
+            </canvas>
+        </div>
+    </body>
+</html>

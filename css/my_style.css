@@ -1,0 +1,31 @@
+body{
+    text-align : center;
+}
+
+#inputs{
+    line-height: 200%;
+}
+
+#radio_grid #grid{
+    position: relative;
+    left: -50px;
+    top: -25px;
+}
+
+#radio_grid #circular{
+    position: relative;
+    left: 188px;
+    top: -25px;
+}
+
+#grid_img{
+     position: relative;
+     left: -130px;
+     top: -55px;
+}
+
+#circular_img{
+     position: relative;
+     left: 70px;
+     top: -55px;
+}
